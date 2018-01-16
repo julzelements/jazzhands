@@ -9,12 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var audioRecorder: AudioRecorder!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.audioRecorder = AudioRecorder()
+    }
+    
+    @IBAction func recordAudio(_ sender: Any) {
+        print("started recording")
+        self.audioRecorder.recordAudio()
     }
 
+    @IBAction func stopRecording(_ sender: Any) {
+        print("stopped recording")
+        self.audioRecorder.stopRecording()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

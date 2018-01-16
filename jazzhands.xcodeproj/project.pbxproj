@@ -13,6 +13,8 @@
 		EC6C8D7F200C7C9C000C86F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D7E200C7C9C000C86F9 /* Assets.xcassets */; };
 		EC6C8D82200C7C9C000C86F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D80200C7C9C000C86F9 /* LaunchScreen.storyboard */; };
 		EC6C8D8D200C7C9C000C86F9 /* jazzhandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */; };
+		EC6C8D98200C7D8F000C86F9 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */; };
+		EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EC6C8D88200C7C9C000C86F9 /* jazzhandsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jazzhandsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jazzhandsTests.swift; sourceTree = "<group>"; };
 		EC6C8D8E200C7C9C000C86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		EC6C8D6B200C7C9C000C86F9 = {
 			isa = PBXGroup;
 			children = (
+				EC9F3783200D799B00B20210 /* Subtitle */,
 				EC6C8D76200C7C9C000C86F9 /* jazzhands */,
 				EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */,
 				EC6C8D75200C7C9C000C86F9 /* Products */,
@@ -83,6 +88,8 @@
 				EC6C8D7E200C7C9C000C86F9 /* Assets.xcassets */,
 				EC6C8D80200C7C9C000C86F9 /* LaunchScreen.storyboard */,
 				EC6C8D83200C7C9C000C86F9 /* Info.plist */,
+				EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */,
+				EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */,
 			);
 			path = jazzhands;
 			sourceTree = "<group>";
@@ -94,6 +101,13 @@
 				EC6C8D8E200C7C9C000C86F9 /* Info.plist */,
 			);
 			path = jazzhandsTests;
+			sourceTree = "<group>";
+		};
+		EC9F3783200D799B00B20210 /* Subtitle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subtitle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */,
+				EC6C8D98200C7D8F000C86F9 /* AudioRecorder.swift in Sources */,
 				EC6C8D7A200C7C9C000C86F9 /* ViewController.swift in Sources */,
 				EC6C8D78200C7C9C000C86F9 /* AppDelegate.swift in Sources */,
 			);
