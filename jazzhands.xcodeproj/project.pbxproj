@@ -12,11 +12,37 @@
 		EC6C8D7D200C7C9C000C86F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D7B200C7C9C000C86F9 /* Main.storyboard */; };
 		EC6C8D7F200C7C9C000C86F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D7E200C7C9C000C86F9 /* Assets.xcassets */; };
 		EC6C8D82200C7C9C000C86F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D80200C7C9C000C86F9 /* LaunchScreen.storyboard */; };
-		EC6C8D8D200C7C9C000C86F9 /* jazzhandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */; };
 		EC6C8D98200C7D8F000C86F9 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */; };
 		EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */; };
 		EC9F3785200D7A9E00B20210 /* SRTTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */; };
 		EC9F3788200D7ABF00B20210 /* SRTTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3787200D7ABF00B20210 /* SRTTime.swift */; };
+		EC9F3794200D7BD600B20210 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F378A200D7BD500B20210 /* TestConstants.swift */; };
+		EC9F3798200D7BD600B20210 /* StanzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F378E200D7BD500B20210 /* StanzaTests.swift */; };
+		EC9F379A200D7BD600B20210 /* SubtitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3790200D7BD500B20210 /* SubtitleTests.swift */; };
+		EC9F379C200D7BD600B20210 /* SubtitleIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3792200D7BD600B20210 /* SubtitleIOTests.swift */; };
+		EC9F37A5200D7BF700B20210 /* TestMoveClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F379D200D7BF700B20210 /* TestMoveClass.swift */; };
+		EC9F37A6200D7BF700B20210 /* SubtitleEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F379E200D7BF700B20210 /* SubtitleEvents.swift */; };
+		EC9F37A7200D7BF700B20210 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F379F200D7BF700B20210 /* Player.swift */; };
+		EC9F37A8200D7BF700B20210 /* StateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37A0200D7BF700B20210 /* StateCalculator.swift */; };
+		EC9F37A9200D7BF700B20210 /* EventMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37A1200D7BF700B20210 /* EventMaker.swift */; };
+		EC9F37AA200D7BF700B20210 /* SubtitleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37A2200D7BF700B20210 /* SubtitleIO.swift */; };
+		EC9F37AB200D7BF700B20210 /* SubtitleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37A3200D7BF700B20210 /* SubtitleEvent.swift */; };
+		EC9F37AC200D7BF700B20210 /* Stanza.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37A4200D7BF700B20210 /* Stanza.swift */; };
+		EC9F37B1200D7CA900B20210 /* ITime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37AE200D7CA900B20210 /* ITime.swift */; };
+		EC9F37B2200D7CA900B20210 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37AF200D7CA900B20210 /* MyTime.swift */; };
+		EC9F37B3200D7CA900B20210 /* TimeStampSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37B0200D7CA900B20210 /* TimeStampSet.swift */; };
+		EC9F37BA200D7D1F00B20210 /* spiderman.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B5200D7D1F00B20210 /* spiderman.srt */; };
+		EC9F37BB200D7D1F00B20210 /* IronMan.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B6200D7D1F00B20210 /* IronMan.srt */; };
+		EC9F37BC200D7D1F00B20210 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B7200D7D1F00B20210 /* test.srt */; };
+		EC9F37BD200D7D1F00B20210 /* spiderman.mov in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B8200D7D1F00B20210 /* spiderman.mov */; };
+		EC9F37BE200D7D1F00B20210 /* IronMan_420-425secs.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */; };
+		EC9F37C4200D820E00B20210 /* spiderman.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B5200D7D1F00B20210 /* spiderman.srt */; };
+		EC9F37C5200D820E00B20210 /* IronMan.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B6200D7D1F00B20210 /* IronMan.srt */; };
+		EC9F37C6200D820E00B20210 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B7200D7D1F00B20210 /* test.srt */; };
+		EC9F37C7200D820E00B20210 /* spiderman.mov in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B8200D7D1F00B20210 /* spiderman.mov */; };
+		EC9F37C8200D820E00B20210 /* IronMan_420-425secs.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */; };
+		EC9F37CA200D82BE00B20210 /* plainText.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37C9200D82BE00B20210 /* plainText.txt */; };
+		EC9F37CB200D830900B20210 /* plainText.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC9F37C9200D82BE00B20210 /* plainText.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +64,32 @@
 		EC6C8D81200C7C9C000C86F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6C8D83200C7C9C000C86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6C8D88200C7C9C000C86F9 /* jazzhandsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jazzhandsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jazzhandsTests.swift; sourceTree = "<group>"; };
 		EC6C8D8E200C7C9C000C86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTimeTests.swift; sourceTree = "<group>"; };
 		EC9F3787200D7ABF00B20210 /* SRTTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTime.swift; sourceTree = "<group>"; };
+		EC9F378A200D7BD500B20210 /* TestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		EC9F378E200D7BD500B20210 /* StanzaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StanzaTests.swift; sourceTree = "<group>"; };
+		EC9F3790200D7BD500B20210 /* SubtitleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleTests.swift; sourceTree = "<group>"; };
+		EC9F3792200D7BD600B20210 /* SubtitleIOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleIOTests.swift; sourceTree = "<group>"; };
+		EC9F379D200D7BF700B20210 /* TestMoveClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMoveClass.swift; sourceTree = "<group>"; };
+		EC9F379E200D7BF700B20210 /* SubtitleEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleEvents.swift; sourceTree = "<group>"; };
+		EC9F379F200D7BF700B20210 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC9F37A0200D7BF700B20210 /* StateCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateCalculator.swift; sourceTree = "<group>"; };
+		EC9F37A1200D7BF700B20210 /* EventMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMaker.swift; sourceTree = "<group>"; };
+		EC9F37A2200D7BF700B20210 /* SubtitleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleIO.swift; sourceTree = "<group>"; };
+		EC9F37A3200D7BF700B20210 /* SubtitleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleEvent.swift; sourceTree = "<group>"; };
+		EC9F37A4200D7BF700B20210 /* Stanza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stanza.swift; sourceTree = "<group>"; };
+		EC9F37AE200D7CA900B20210 /* ITime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITime.swift; sourceTree = "<group>"; };
+		EC9F37AF200D7CA900B20210 /* MyTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTime.swift; sourceTree = "<group>"; };
+		EC9F37B0200D7CA900B20210 /* TimeStampSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStampSet.swift; sourceTree = "<group>"; };
+		EC9F37B5200D7D1F00B20210 /* spiderman.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spiderman.srt; sourceTree = "<group>"; };
+		EC9F37B6200D7D1F00B20210 /* IronMan.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IronMan.srt; sourceTree = "<group>"; };
+		EC9F37B7200D7D1F00B20210 /* test.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.srt; sourceTree = "<group>"; };
+		EC9F37B8200D7D1F00B20210 /* spiderman.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = spiderman.mov; sourceTree = "<group>"; };
+		EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "IronMan_420-425secs.wav"; sourceTree = "<group>"; };
+		EC9F37C9200D82BE00B20210 /* plainText.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = plainText.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +113,8 @@
 		EC6C8D6B200C7C9C000C86F9 = {
 			isa = PBXGroup;
 			children = (
+				EC9F37B4200D7D1F00B20210 /* TestAssets */,
+				EC9F37AD200D7CA900B20210 /* Time */,
 				EC9F3786200D7AB500B20210 /* Subtitle */,
 				EC6C8D76200C7C9C000C86F9 /* jazzhands */,
 				EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */,
@@ -101,8 +149,11 @@
 		EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC9F378E200D7BD500B20210 /* StanzaTests.swift */,
+				EC9F3792200D7BD600B20210 /* SubtitleIOTests.swift */,
+				EC9F3790200D7BD500B20210 /* SubtitleTests.swift */,
+				EC9F378A200D7BD500B20210 /* TestConstants.swift */,
 				EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */,
-				EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */,
 				EC6C8D8E200C7C9C000C86F9 /* Info.plist */,
 			);
 			path = jazzhandsTests;
@@ -112,8 +163,39 @@
 			isa = PBXGroup;
 			children = (
 				EC9F3787200D7ABF00B20210 /* SRTTime.swift */,
+				EC9F37A1200D7BF700B20210 /* EventMaker.swift */,
+				EC9F379F200D7BF700B20210 /* Player.swift */,
+				EC9F37A4200D7BF700B20210 /* Stanza.swift */,
+				EC9F37A0200D7BF700B20210 /* StateCalculator.swift */,
+				EC9F37A3200D7BF700B20210 /* SubtitleEvent.swift */,
+				EC9F379E200D7BF700B20210 /* SubtitleEvents.swift */,
+				EC9F37A2200D7BF700B20210 /* SubtitleIO.swift */,
+				EC9F379D200D7BF700B20210 /* TestMoveClass.swift */,
 			);
 			path = Subtitle;
+			sourceTree = "<group>";
+		};
+		EC9F37AD200D7CA900B20210 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				EC9F37AE200D7CA900B20210 /* ITime.swift */,
+				EC9F37AF200D7CA900B20210 /* MyTime.swift */,
+				EC9F37B0200D7CA900B20210 /* TimeStampSet.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		EC9F37B4200D7D1F00B20210 /* TestAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EC9F37B5200D7D1F00B20210 /* spiderman.srt */,
+				EC9F37B6200D7D1F00B20210 /* IronMan.srt */,
+				EC9F37B7200D7D1F00B20210 /* test.srt */,
+				EC9F37B8200D7D1F00B20210 /* spiderman.mov */,
+				EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */,
+				EC9F37C9200D82BE00B20210 /* plainText.txt */,
+			);
+			path = TestAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +283,13 @@
 			files = (
 				EC6C8D82200C7C9C000C86F9 /* LaunchScreen.storyboard in Resources */,
 				EC6C8D7F200C7C9C000C86F9 /* Assets.xcassets in Resources */,
+				EC9F37C8200D820E00B20210 /* IronMan_420-425secs.wav in Resources */,
+				EC9F37C7200D820E00B20210 /* spiderman.mov in Resources */,
 				EC6C8D7D200C7C9C000C86F9 /* Main.storyboard in Resources */,
+				EC9F37C5200D820E00B20210 /* IronMan.srt in Resources */,
+				EC9F37CB200D830900B20210 /* plainText.txt in Resources */,
+				EC9F37C4200D820E00B20210 /* spiderman.srt in Resources */,
+				EC9F37C6200D820E00B20210 /* test.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +297,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F37CA200D82BE00B20210 /* plainText.txt in Resources */,
+				EC9F37BD200D7D1F00B20210 /* spiderman.mov in Resources */,
+				EC9F37BB200D7D1F00B20210 /* IronMan.srt in Resources */,
+				EC9F37BE200D7D1F00B20210 /* IronMan_420-425secs.wav in Resources */,
+				EC9F37BA200D7D1F00B20210 /* spiderman.srt in Resources */,
+				EC9F37BC200D7D1F00B20210 /* test.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,9 +324,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F37B2200D7CA900B20210 /* MyTime.swift in Sources */,
+				EC9F37AC200D7BF700B20210 /* Stanza.swift in Sources */,
+				EC9F37B1200D7CA900B20210 /* ITime.swift in Sources */,
+				EC9F3798200D7BD600B20210 /* StanzaTests.swift in Sources */,
+				EC9F37A6200D7BF700B20210 /* SubtitleEvents.swift in Sources */,
+				EC9F37A5200D7BF700B20210 /* TestMoveClass.swift in Sources */,
+				EC9F37A9200D7BF700B20210 /* EventMaker.swift in Sources */,
+				EC9F37AB200D7BF700B20210 /* SubtitleEvent.swift in Sources */,
+				EC9F379A200D7BD600B20210 /* SubtitleTests.swift in Sources */,
+				EC9F37B3200D7CA900B20210 /* TimeStampSet.swift in Sources */,
+				EC9F37AA200D7BF700B20210 /* SubtitleIO.swift in Sources */,
 				EC9F3785200D7A9E00B20210 /* SRTTimeTests.swift in Sources */,
-				EC6C8D8D200C7C9C000C86F9 /* jazzhandsTests.swift in Sources */,
 				EC9F3788200D7ABF00B20210 /* SRTTime.swift in Sources */,
+				EC9F37A8200D7BF700B20210 /* StateCalculator.swift in Sources */,
+				EC9F3794200D7BD600B20210 /* TestConstants.swift in Sources */,
+				EC9F37A7200D7BF700B20210 /* Player.swift in Sources */,
+				EC9F379C200D7BD600B20210 /* SubtitleIOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
