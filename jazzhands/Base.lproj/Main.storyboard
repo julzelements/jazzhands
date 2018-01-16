@@ -18,18 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-KX-lZj">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-KX-lZj">
+                                <rect key="frame" x="16" y="20" width="343" height="424"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-Vt-nFk">
+                                <rect key="frame" x="172" y="617" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="gCa-Ei-cXf" eventType="touchUpInside" id="i67-fB-YN3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="M7A-Fh-8sn" firstAttribute="bottom" secondItem="MzF-KX-lZj" secondAttribute="bottom" constant="20" id="9Ll-Qa-ZOB"/>
+                            <constraint firstItem="M7A-Fh-8sn" firstAttribute="bottom" secondItem="MzF-KX-lZj" secondAttribute="bottom" constant="200" id="9Ll-Qa-ZOB"/>
                             <constraint firstItem="M7A-Fh-8sn" firstAttribute="trailing" secondItem="MzF-KX-lZj" secondAttribute="trailing" constant="16" id="AdR-Vv-Nr2"/>
                             <constraint firstItem="MzF-KX-lZj" firstAttribute="leading" secondItem="M7A-Fh-8sn" secondAttribute="leading" constant="16" id="RVL-5a-T8r"/>
+                            <constraint firstItem="PQv-Vt-nFk" firstAttribute="centerX" secondItem="M7A-Fh-8sn" secondAttribute="centerX" id="fog-5g-Jat"/>
+                            <constraint firstItem="M7A-Fh-8sn" firstAttribute="bottom" secondItem="PQv-Vt-nFk" secondAttribute="bottom" constant="20" id="hQw-eP-Adf"/>
                             <constraint firstItem="MzF-KX-lZj" firstAttribute="top" secondItem="M7A-Fh-8sn" secondAttribute="top" id="mtw-bC-bKy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M7A-Fh-8sn"/>

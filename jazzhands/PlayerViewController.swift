@@ -22,8 +22,11 @@ class PlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setup() {
         //pretend that the api was called 8.5 seconds ago
-        apiSystemTime = Date.timeIntervalSinceReferenceDate - 8.5
+        apiSystemTime = Date.timeIntervalSinceReferenceDate - 0.0
         apiMovieTime = callApi()
         time = MyTime()
         events = getEvents()
@@ -32,14 +35,19 @@ class PlayerViewController: UIViewController {
         
         getReadyForTheNextSubtitle()
     }
-
+    
+    
+    @IBAction func play(_ sender: Any) {
+        setup()
+    }
+    
     func getEvents() -> SubtitleEvents {
         let rawSubs = SubtitleIO.getRawStringFromFileInBundle(fileName: "IronMan", fileExtension: "srt")
         return SubtitleEvents(rawSRTString: rawSubs)
     }
     
     func callApi() -> Double {
-        let movieTime = 400.0
+        let movieTime = 420.0
         return movieTime
     }
     
