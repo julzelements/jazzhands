@@ -32,20 +32,42 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ML-lf-a2R"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="🙏" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dhb-tr-jDs">
+                                <rect key="frame" x="16" y="394" width="343" height="253"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37u-SP-4DU">
+                                <rect key="frame" x="152" y="280" width="71" height="30"/>
+                                <state key="normal" title="Load subs"/>
+                                <connections>
+                                    <action selector="loadSubs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJ0-5x-cX8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dhb-tr-jDs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3wx-vD-mLZ"/>
+                            <constraint firstItem="MU3-P7-DlU" firstAttribute="top" secondItem="37u-SP-4DU" secondAttribute="bottom" constant="8" id="D8O-Cg-hDc"/>
                             <constraint firstItem="sg0-ll-XxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JPY-g8-jJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dhb-tr-jDs" secondAttribute="trailing" constant="16" id="Jdv-Y9-hYq"/>
+                            <constraint firstItem="dhb-tr-jDs" firstAttribute="top" secondItem="sg0-ll-XxR" secondAttribute="bottom" constant="8" id="is8-pX-aMU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dhb-tr-jDs" secondAttribute="bottom" constant="20" id="j3m-aO-OkG"/>
                             <constraint firstItem="MU3-P7-DlU" firstAttribute="centerX" secondItem="sg0-ll-XxR" secondAttribute="centerX" id="jHk-TK-VpQ"/>
                             <constraint firstItem="sg0-ll-XxR" firstAttribute="top" secondItem="MU3-P7-DlU" secondAttribute="bottom" constant="8" symbolic="YES" id="o31-E6-Hij"/>
+                            <constraint firstItem="37u-SP-4DU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q4j-Be-Ikn"/>
                             <constraint firstItem="MU3-P7-DlU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rQ4-Tz-0GQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="subtitleOutput" destination="dhb-tr-jDs" id="29q-PS-p4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-962" y="118"/>
+            <point key="canvasLocation" x="-962.39999999999998" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
