@@ -15,6 +15,8 @@
 		EC6C8D8D200C7C9C000C86F9 /* jazzhandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */; };
 		EC6C8D98200C7D8F000C86F9 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */; };
 		EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */; };
+		EC9F3785200D7A9E00B20210 /* SRTTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */; };
+		EC9F3788200D7ABF00B20210 /* SRTTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F3787200D7ABF00B20210 /* SRTTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		EC6C8D8E200C7C9C000C86F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTimeTests.swift; sourceTree = "<group>"; };
+		EC9F3787200D7ABF00B20210 /* SRTTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRTTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,7 @@
 		EC6C8D6B200C7C9C000C86F9 = {
 			isa = PBXGroup;
 			children = (
-				EC9F3783200D799B00B20210 /* Subtitle */,
+				EC9F3786200D7AB500B20210 /* Subtitle */,
 				EC6C8D76200C7C9C000C86F9 /* jazzhands */,
 				EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */,
 				EC6C8D75200C7C9C000C86F9 /* Products */,
@@ -97,15 +101,17 @@
 		EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC9F3784200D7A9E00B20210 /* SRTTimeTests.swift */,
 				EC6C8D8C200C7C9C000C86F9 /* jazzhandsTests.swift */,
 				EC6C8D8E200C7C9C000C86F9 /* Info.plist */,
 			);
 			path = jazzhandsTests;
 			sourceTree = "<group>";
 		};
-		EC9F3783200D799B00B20210 /* Subtitle */ = {
+		EC9F3786200D7AB500B20210 /* Subtitle */ = {
 			isa = PBXGroup;
 			children = (
+				EC9F3787200D7ABF00B20210 /* SRTTime.swift */,
 			);
 			path = Subtitle;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F3785200D7A9E00B20210 /* SRTTimeTests.swift in Sources */,
 				EC6C8D8D200C7C9C000C86F9 /* jazzhandsTests.swift in Sources */,
+				EC9F3788200D7ABF00B20210 /* SRTTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
