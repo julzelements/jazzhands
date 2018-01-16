@@ -53,6 +53,7 @@
 		EC9F37D5200D89B300B20210 /* ITime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37AE200D7CA900B20210 /* ITime.swift */; };
 		EC9F37D6200D89B300B20210 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37AF200D7CA900B20210 /* MyTime.swift */; };
 		EC9F37D7200D89B300B20210 /* TimeStampSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37B0200D7CA900B20210 /* TimeStampSet.swift */; };
+		EC9F37D9200D9A9B00B20210 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37D8200D9A9B00B20210 /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		EC9F37B8200D7D1F00B20210 /* spiderman.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = spiderman.mov; sourceTree = "<group>"; };
 		EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "IronMan_420-425secs.wav"; sourceTree = "<group>"; };
 		EC9F37C9200D82BE00B20210 /* plainText.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = plainText.txt; sourceTree = "<group>"; };
+		EC9F37D8200D9A9B00B20210 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		EC6C8D76200C7C9C000C86F9 /* jazzhands */ = {
 			isa = PBXGroup;
 			children = (
+				EC9F37D8200D9A9B00B20210 /* PlayerViewController.swift */,
 				EC6C8D77200C7C9C000C86F9 /* AppDelegate.swift */,
 				EC6C8D79200C7C9C000C86F9 /* ViewController.swift */,
 				EC6C8D7B200C7C9C000C86F9 /* Main.storyboard */,
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9F37D5200D89B300B20210 /* ITime.swift in Sources */,
+				EC9F37D9200D9A9B00B20210 /* PlayerViewController.swift in Sources */,
 				EC9F37D3200D886B00B20210 /* SubtitleEvents.swift in Sources */,
 				EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */,
 				EC9F37CC200D885C00B20210 /* SubtitleIO.swift in Sources */,
