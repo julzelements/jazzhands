@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04A12D0F42E93713CC9B08B /* Pods_jazzhands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06621EC7DAB02E4C47D08B7 /* Pods_jazzhands.framework */; };
 		EC6C8D78200C7C9C000C86F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D77200C7C9C000C86F9 /* AppDelegate.swift */; };
 		EC6C8D7A200C7C9C000C86F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C8D79200C7C9C000C86F9 /* ViewController.swift */; };
 		EC6C8D7D200C7C9C000C86F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C8D7B200C7C9C000C86F9 /* Main.storyboard */; };
@@ -54,6 +55,9 @@
 		EC9F37D6200D89B300B20210 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37AF200D7CA900B20210 /* MyTime.swift */; };
 		EC9F37D7200D89B300B20210 /* TimeStampSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37B0200D7CA900B20210 /* TimeStampSet.swift */; };
 		EC9F37D9200D9A9B00B20210 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37D8200D9A9B00B20210 /* PlayerViewController.swift */; };
+		EC9F37DC200DACEE00B20210 /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37DB200DACEE00B20210 /* Recognizer.swift */; };
+		EC9F37DE200DACF700B20210 /* AudioFormCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F37DD200DACF700B20210 /* AudioFormCreator.swift */; };
+		ED80E2F42EA75D151AC9C203 /* Pods_jazzhandsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE52B3764582539B21ABED3C /* Pods_jazzhandsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C5FCBDE5B572D0704AAE9BF /* Pods-jazzhandsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jazzhandsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-jazzhandsTests/Pods-jazzhandsTests.release.xcconfig"; sourceTree = "<group>"; };
+		2864771231DF8EDDE7C62421 /* Pods-jazzhands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jazzhands.release.xcconfig"; path = "Pods/Target Support Files/Pods-jazzhands/Pods-jazzhands.release.xcconfig"; sourceTree = "<group>"; };
+		4B60A64835C9774F09D2D0B1 /* Pods-jazzhands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jazzhands.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jazzhands/Pods-jazzhands.debug.xcconfig"; sourceTree = "<group>"; };
+		80B9D335A5BAF5A61F88B2AF /* Pods-jazzhandsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jazzhandsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jazzhandsTests/Pods-jazzhandsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B06621EC7DAB02E4C47D08B7 /* Pods_jazzhands.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jazzhands.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE52B3764582539B21ABED3C /* Pods_jazzhandsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jazzhandsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6C8D74200C7C9C000C86F9 /* jazzhands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jazzhands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6C8D77200C7C9C000C86F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6C8D79200C7C9C000C86F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +111,8 @@
 		EC9F37B9200D7D1F00B20210 /* IronMan_420-425secs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "IronMan_420-425secs.wav"; sourceTree = "<group>"; };
 		EC9F37C9200D82BE00B20210 /* plainText.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = plainText.txt; sourceTree = "<group>"; };
 		EC9F37D8200D9A9B00B20210 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		EC9F37DB200DACEE00B20210 /* Recognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
+		EC9F37DD200DACF700B20210 /* AudioFormCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFormCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04A12D0F42E93713CC9B08B /* Pods_jazzhands.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,21 +128,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED80E2F42EA75D151AC9C203 /* Pods_jazzhandsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C635A530C96AC2E154D3179E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B60A64835C9774F09D2D0B1 /* Pods-jazzhands.debug.xcconfig */,
+				2864771231DF8EDDE7C62421 /* Pods-jazzhands.release.xcconfig */,
+				80B9D335A5BAF5A61F88B2AF /* Pods-jazzhandsTests.debug.xcconfig */,
+				0C5FCBDE5B572D0704AAE9BF /* Pods-jazzhandsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC6C8D6B200C7C9C000C86F9 = {
 			isa = PBXGroup;
 			children = (
+				ECE794FD200ECDC900DB3FCA /* AudioRecording */,
+				EC9F37DA200DACDB00B20210 /* API */,
 				EC9F37B4200D7D1F00B20210 /* TestAssets */,
 				EC9F37AD200D7CA900B20210 /* Time */,
 				EC9F3786200D7AB500B20210 /* Subtitle */,
 				EC6C8D76200C7C9C000C86F9 /* jazzhands */,
 				EC6C8D8B200C7C9C000C86F9 /* jazzhandsTests */,
 				EC6C8D75200C7C9C000C86F9 /* Products */,
+				C635A530C96AC2E154D3179E /* Pods */,
+				F8064919D2AA23CBFB4CCEBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,8 +181,6 @@
 				EC6C8D7E200C7C9C000C86F9 /* Assets.xcassets */,
 				EC6C8D80200C7C9C000C86F9 /* LaunchScreen.storyboard */,
 				EC6C8D83200C7C9C000C86F9 /* Info.plist */,
-				EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */,
-				EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */,
 			);
 			path = jazzhands;
 			sourceTree = "<group>";
@@ -209,6 +236,33 @@
 			path = TestAssets;
 			sourceTree = "<group>";
 		};
+		EC9F37DA200DACDB00B20210 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC9F37DD200DACF700B20210 /* AudioFormCreator.swift */,
+				EC9F37DB200DACEE00B20210 /* Recognizer.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ECE794FD200ECDC900DB3FCA /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+				EC6C8D99200C7DCA000C86F9 /* RecordedAudio.swift */,
+				EC6C8D97200C7D8F000C86F9 /* AudioRecorder.swift */,
+			);
+			path = AudioRecording;
+			sourceTree = "<group>";
+		};
+		F8064919D2AA23CBFB4CCEBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06621EC7DAB02E4C47D08B7 /* Pods_jazzhands.framework */,
+				CE52B3764582539B21ABED3C /* Pods_jazzhandsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6C8D91200C7C9C000C86F9 /* Build configuration list for PBXNativeTarget "jazzhands" */;
 			buildPhases = (
+				51D092D3874E1548733B7AFC /* [CP] Check Pods Manifest.lock */,
 				EC6C8D70200C7C9C000C86F9 /* Sources */,
 				EC6C8D71200C7C9C000C86F9 /* Frameworks */,
 				EC6C8D72200C7C9C000C86F9 /* Resources */,
+				1826CB16A3265F356662473C /* [CP] Embed Pods Frameworks */,
+				31B8E56E820F628334250C4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6C8D94200C7C9C000C86F9 /* Build configuration list for PBXNativeTarget "jazzhandsTests" */;
 			buildPhases = (
+				37613F1BABF073ABF645E399 /* [CP] Check Pods Manifest.lock */,
 				EC6C8D84200C7C9C000C86F9 /* Sources */,
 				EC6C8D85200C7C9C000C86F9 /* Frameworks */,
 				EC6C8D86200C7C9C000C86F9 /* Resources */,
+				C7C17B8CFD6B0E56500F2EFD /* [CP] Embed Pods Frameworks */,
+				A9E151BB8CA739E898BB4C63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,15 +379,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1826CB16A3265F356662473C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jazzhands/Pods-jazzhands-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jazzhands/Pods-jazzhands-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31B8E56E820F628334250C4E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jazzhands/Pods-jazzhands-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37613F1BABF073ABF645E399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jazzhandsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D092D3874E1548733B7AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jazzhands-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E151BB8CA739E898BB4C63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jazzhandsTests/Pods-jazzhandsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C17B8CFD6B0E56500F2EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jazzhandsTests/Pods-jazzhandsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC6C8D70200C7C9C000C86F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EC9F37D5200D89B300B20210 /* ITime.swift in Sources */,
+				EC9F37DE200DACF700B20210 /* AudioFormCreator.swift in Sources */,
 				EC9F37D9200D9A9B00B20210 /* PlayerViewController.swift in Sources */,
 				EC9F37D3200D886B00B20210 /* SubtitleEvents.swift in Sources */,
 				EC6C8D9A200C7DCA000C86F9 /* RecordedAudio.swift in Sources */,
+				EC9F37DC200DACEE00B20210 /* Recognizer.swift in Sources */,
 				EC9F37CC200D885C00B20210 /* SubtitleIO.swift in Sources */,
 				EC9F37CD200D886A00B20210 /* SRTTime.swift in Sources */,
 				EC9F37D6200D89B300B20210 /* MyTime.swift in Sources */,
@@ -505,6 +669,7 @@
 		};
 		EC6C8D92200C7C9C000C86F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B60A64835C9774F09D2D0B1 /* Pods-jazzhands.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +685,7 @@
 		};
 		EC6C8D93200C7C9C000C86F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2864771231DF8EDDE7C62421 /* Pods-jazzhands.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +701,7 @@
 		};
 		EC6C8D95200C7C9C000C86F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B9D335A5BAF5A61F88B2AF /* Pods-jazzhandsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +719,7 @@
 		};
 		EC6C8D96200C7C9C000C86F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5FCBDE5B572D0704AAE9BF /* Pods-jazzhandsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

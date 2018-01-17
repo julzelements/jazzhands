@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var label: UILabel!
     var apiSystemTime: Double!
@@ -16,12 +17,15 @@ class PlayerViewController: UIViewController {
     var player: Player!
     var events: SubtitleEvents!
     var time: MyTime!
+    var recordedAudioURL: URL!
+    var audioRecorder: AudioRecorder!
     
     var timer = Timer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        audioRecorder = AudioRecorder(delegate: self)
     }
     
     func setup() {
@@ -41,6 +45,22 @@ class PlayerViewController: UIViewController {
         setup()
     }
     
+    @IBAction func record(_ sender: Any) {
+        audioRecorder.recordAudio()
+    }
+    
+    @IBAction func stopRecording(_ sender: Any) {
+        audioRecorder.stopRecording()
+    }
+    
+    @IBAction func printAudioData(_ sender: Any) {
+        print(recordedAudioURL)
+    }
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        print(recorder.url)
+    }
+    
     func getEvents() -> SubtitleEvents {
         let rawSubs = SubtitleIO.getRawStringFromFileInBundle(fileName: "IronMan", fileExtension: "srt")
         return SubtitleEvents(rawSRTString: rawSubs)
@@ -49,6 +69,19 @@ class PlayerViewController: UIViewController {
     func callApi() -> Double {
         let movieTime = 420.0
         return movieTime
+        
+        let formCreator = AudioFormCreator(audioFilePath: self.recordedAudioURL)
+        let request = formCreator.createMultiformPOSTRequest()
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, _, _) in
+            if let data = data,
+                let string = String(data: data, encoding: .utf8) {
+                print(string)
+                //extract movie time
+                self.apiMovieTime = 35.5
+            }
+        }
+        task.resume()
     }
     
     func makeATimer(interval: Double) {
