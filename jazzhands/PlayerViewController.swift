@@ -5,7 +5,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var label: UILabel!
     var systemTimeWhenRecordingStarted: Double!
-    var systemTimeWhenApiWasCalled: Double!
     var apiMovieTime: Double!
     var player: Player!
     var events: SubtitleEvents!
@@ -24,13 +23,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     func createPlayer() {
         time = MyTime()
         events = getEvents()
-        print("""
-            player created:
-            apiMovieTime: \(apiMovieTime)
-            now: \(Date.timeIntervalSinceReferenceDate - 537933931)
-""")
-        
-        //should be called systemTimeWhenRecordingStarted
         player = Player(apiSystemTime: systemTimeWhenRecordingStarted, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
     }
     
@@ -121,6 +113,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func logSystemTime(description: String) {
-        print("\(description): \(Date.timeIntervalSinceReferenceDate - 537933931)")
+        print("\(description): \(Date.timeIntervalSinceReferenceDate - systemTimeWhenRecordingStarted)")
     }
 }
