@@ -45,13 +45,6 @@
                                     <action selector="record:" destination="gCa-Ei-cXf" eventType="touchUpInside" id="qIw-9b-3Mi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeO-EJ-uhk">
-                                <rect key="frame" x="160" y="467" width="53" height="30"/>
-                                <state key="normal" title="Call API"/>
-                                <connections>
-                                    <action selector="callApi:" destination="gCa-Ei-cXf" eventType="touchUpInside" id="AnK-UK-xZT"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -64,7 +57,6 @@
                             <constraint firstItem="MzF-KX-lZj" firstAttribute="leading" secondItem="M7A-Fh-8sn" secondAttribute="leading" constant="16" id="RVL-5a-T8r"/>
                             <constraint firstItem="PQv-Vt-nFk" firstAttribute="centerX" secondItem="M7A-Fh-8sn" secondAttribute="centerX" id="fog-5g-Jat"/>
                             <constraint firstItem="M7A-Fh-8sn" firstAttribute="bottom" secondItem="PQv-Vt-nFk" secondAttribute="bottom" constant="20" id="hQw-eP-Adf"/>
-                            <constraint firstItem="vau-Im-0Le" firstAttribute="top" secondItem="WeO-EJ-uhk" secondAttribute="bottom" constant="8" id="ivp-2k-rRV"/>
                             <constraint firstItem="MzF-KX-lZj" firstAttribute="top" secondItem="M7A-Fh-8sn" secondAttribute="top" id="mtw-bC-bKy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M7A-Fh-8sn"/>

@@ -1,11 +1,3 @@
-//
-//  PlayerViewController.swift
-//  TimeMock
-//
-//  Created by Julian Scharf on 6/9/17.
-//  Copyright © 2017 Julian Scharf. All rights reserved.
-//
-
 import UIKit
 import AVFoundation
 
@@ -34,7 +26,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         events = getEvents()
         print("""
             player created:
-            systemTimeWhenApiWasCalled: \(systemTimeWhenApiWasCalled - 537933931)
             apiMovieTime: \(apiMovieTime)
             now: \(Date.timeIntervalSinceReferenceDate - 537933931)
 """)
@@ -59,12 +50,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stopRecording()
     }
     
-    @IBAction func callApi(_ sender: Any) {
-        logSystemTime(description: "api was called")
-        sendRequest()
-    }
-    
-
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             print("recording successful")
@@ -73,8 +58,9 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
                 audioTitle: recorder.url.lastPathComponent)
             print("recorded audio url: \(recorder.url)")
             // substitute a harcoded audio file here:
-//            recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
-//            print("using test audio file \(recordedAudio.title)")
+            // recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
+            // print("using test audio file \(recordedAudio.title)")
+            sendRequest()
         } else {
             print("recording was not successful")
         }
@@ -98,14 +84,7 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
                 print("player is ready")
             }
         }
-        self.recordApiCallTime()
         task.resume()
-    }
-    
-    func recordApiCallTime() {
-        print("recordAPICallTIme")
-        systemTimeWhenApiWasCalled = Date.timeIntervalSinceReferenceDate
-        print(systemTimeWhenApiWasCalled)
     }
     
     func setSystemTimeWhenRecordingStarts() {
@@ -119,7 +98,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     
     func makeATimer(interval: Double) {
         print("interval: \(interval)")
-        print("SystemTime: \(Date.timeIntervalSinceReferenceDate - systemTimeWhenApiWasCalled)")
         timer = Timer(timeInterval: interval, target: self, selector: (#selector(PlayerViewController.getReadyForTheNextSubtitle)), userInfo: nil, repeats: false)
         RunLoop.current.add(timer, forMode: .defaultRunLoopMode)
     }
