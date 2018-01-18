@@ -12,6 +12,7 @@ import AVFoundation
 class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var label: UILabel!
+    var systemTimeWhenRecordingStarted: Double!
     var systemTimeWhenApiWasCalled: Double!
     var apiMovieTime: Double!
     var player: Player!
@@ -39,7 +40,7 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
 """)
         
         //should be called systemTimeWhenRecordingStarted
-        player = Player(apiSystemTime: systemTimeWhenApiWasCalled, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
+        player = Player(apiSystemTime: systemTimeWhenRecordingStarted, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
     }
     
     @IBAction func play(_ sender: Any) {
@@ -49,6 +50,7 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func record(_ sender: Any) {
+        setSystemTimeWhenRecordingStarts()
         logSystemTime(description: "record button was pushed")
         audioRecorder.recordAudio()
     }
@@ -104,6 +106,11 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         print("recordAPICallTIme")
         systemTimeWhenApiWasCalled = Date.timeIntervalSinceReferenceDate
         print(systemTimeWhenApiWasCalled)
+    }
+    
+    func setSystemTimeWhenRecordingStarts() {
+        systemTimeWhenRecordingStarted = Date.timeIntervalSinceReferenceDate
+        logSystemTime(description: "Recording Started")
     }
     
     func setMovieTime(time: Double) {
