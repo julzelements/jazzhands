@@ -46,10 +46,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeO-EJ-uhk">
-                                <rect key="frame" x="170" y="467" width="32" height="30"/>
-                                <state key="normal" title="Print"/>
+                                <rect key="frame" x="160" y="467" width="53" height="30"/>
+                                <state key="normal" title="Call API"/>
                                 <connections>
-                                    <action selector="printAudioData:" destination="gCa-Ei-cXf" eventType="touchUpInside" id="bt7-fz-IZk"/>
+                                    <action selector="callApi:" destination="gCa-Ei-cXf" eventType="touchUpInside" id="AnK-UK-xZT"/>
                                 </connections>
                             </button>
                         </subviews>

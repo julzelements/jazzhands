@@ -12,12 +12,12 @@ import AVFoundation
 class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var label: UILabel!
-    var apiSystemTime: Double!
+    var systemTimeWhenApiWasCalled: Double!
     var apiMovieTime: Double!
     var player: Player!
     var events: SubtitleEvents!
     var time: MyTime!
-    var recordedAudioURL: URL!
+    var recordedAudio: RecordedAudio!
     var audioRecorder: AudioRecorder!
     
     var timer = Timer()
@@ -28,21 +28,16 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder = AudioRecorder(delegate: self)
     }
     
-    func setup() {
-        //pretend that the api was called 8.5 seconds ago
-        apiSystemTime = Date.timeIntervalSinceReferenceDate - 0.0
-        apiMovieTime = callApi()
+    func createPlayer() {
         time = MyTime()
         events = getEvents()
-        
-        player = Player(apiSystemTime: apiSystemTime, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
-        
-        getReadyForTheNextSubtitle()
+
+        player = Player(apiSystemTime: systemTimeWhenApiWasCalled, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
     }
     
-    
     @IBAction func play(_ sender: Any) {
-        setup()
+        createPlayer()
+        getReadyForTheNextSubtitle()
     }
     
     @IBAction func record(_ sender: Any) {
@@ -53,12 +48,24 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stopRecording()
     }
     
-    @IBAction func printAudioData(_ sender: Any) {
-        print(recordedAudioURL)
+    @IBAction func callApi(_ sender: Any) {
+        sendRequest()
     }
     
+
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        print(recorder.url)
+        if(flag) {
+            print("recording successful")
+            recordedAudio = RecordedAudio(
+                audioFilePathURL: recorder.url as NSURL,
+                audioTitle: recorder.url.lastPathComponent)
+            print("recorded audio url: \(recorder.url)")
+            // substitute a harcoded audio file here:
+            recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
+            print("using test audio file \(recordedAudio.title)")
+        } else {
+            print("recording was not successful")
+        }
     }
     
     func getEvents() -> SubtitleEvents {
@@ -66,27 +73,37 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         return SubtitleEvents(rawSRTString: rawSubs)
     }
     
-    func callApi() -> Double {
-        let movieTime = 420.0
-        return movieTime
-        
-        let formCreator = AudioFormCreator(audioFilePath: self.recordedAudioURL)
+    func sendRequest(){
+        let formCreator = AudioFormCreator(audioFilePath: self.recordedAudio.filePathURL as URL)
         let request = formCreator.createMultiformPOSTRequest()
         
         let task = URLSession.shared.dataTask(with: request) { (data, _, _) in
             if let data = data,
                 let string = String(data: data, encoding: .utf8) {
                 print(string)
-                //extract movie time
-                self.apiMovieTime = 35.5
+                let offset = DejavuPayload(json: string).offset!
+                self.setMovieTime(time: offset)
+                print("player is ready")
+
             }
         }
+        self.recordApiCallTime()
         task.resume()
+    }
+    
+    func recordApiCallTime() {
+        print("recordAPICallTIme")
+        systemTimeWhenApiWasCalled = Date.timeIntervalSinceReferenceDate
+        print(systemTimeWhenApiWasCalled)
+    }
+    
+    func setMovieTime(time: Double) {
+        apiMovieTime = time
     }
     
     func makeATimer(interval: Double) {
         print("interval: \(interval)")
-        print("SystemTime: \(Date.timeIntervalSinceReferenceDate - apiSystemTime)")
+        print("SystemTime: \(Date.timeIntervalSinceReferenceDate - systemTimeWhenApiWasCalled)")
         timer = Timer(timeInterval: interval, target: self, selector: (#selector(PlayerViewController.getReadyForTheNextSubtitle)), userInfo: nil, repeats: false)
         RunLoop.current.add(timer, forMode: .defaultRunLoopMode)
     }
@@ -102,5 +119,10 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
         printCurrentSubtitle()
         let interval = player.timeIntervalToNextSubtitle
         makeATimer(interval: interval!)
+    }
+    
+    func getTestAudioFile(testFile: String) -> RecordedAudio {
+        let nsurl = Bundle.main.url(forResource: testFile, withExtension: "wav")! as NSURL
+        return RecordedAudio(audioFilePathURL: nsurl, audioTitle: testFile)
     }
 }

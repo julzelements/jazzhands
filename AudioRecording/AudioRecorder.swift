@@ -29,27 +29,9 @@ class AudioRecorder: NSObject, AVAudioRecorderDelegate {
         audioRecorder.record()
     }
     
-//    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-//        if(flag) {
-//            recordedAudio = RecordedAudio(
-//                audioFilePathURL: recorder.url as NSURL,
-//                audioTitle: recorder.url.lastPathComponent)
-//            // substitute a harcoded audio file here:
-//            recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
-//            print(recorder.url)
-//        } else {
-//            print("recording was not successful")
-//        }
-//    }
-    
     func stopRecording() {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
-    }
-    
-    func getTestAudioFile(testFile: String) -> RecordedAudio {
-        let nsurl = Bundle.main.url(forResource: testFile, withExtension: "wav")! as NSURL
-        return RecordedAudio(audioFilePathURL: nsurl, audioTitle: testFile)
     }
 }
