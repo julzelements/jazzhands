@@ -89,7 +89,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func makeATimer(interval: Double) {
-        print("interval: \(interval)")
         timer = Timer(timeInterval: interval, target: self, selector: (#selector(PlayerViewController.getReadyForTheNextSubtitle)), userInfo: nil, repeats: false)
         RunLoop.current.add(timer, forMode: .defaultRunLoopMode)
     }
@@ -97,6 +96,7 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     func printCurrentSubtitle() {
         let currentSubtitle = events[player.currentSubtitleIndex]
         print(currentSubtitle)
+        logSystemTime(description: "time since recording started:")
         label.text = currentSubtitle.text
     }
     

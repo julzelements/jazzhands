@@ -1,0 +1,6 @@
+framework module Pods_jazzhandsTests {
+  umbrella header "Pods-jazzhandsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
