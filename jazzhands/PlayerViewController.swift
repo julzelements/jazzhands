@@ -31,16 +31,25 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     func createPlayer() {
         time = MyTime()
         events = getEvents()
-
+        print("""
+            player created:
+            systemTimeWhenApiWasCalled: \(systemTimeWhenApiWasCalled - 537933931)
+            apiMovieTime: \(apiMovieTime)
+            now: \(Date.timeIntervalSinceReferenceDate - 537933931)
+""")
+        
+        //should be called systemTimeWhenRecordingStarted
         player = Player(apiSystemTime: systemTimeWhenApiWasCalled, apiMovieTime: apiMovieTime, arrayOfEvents: events, time: time)
     }
     
     @IBAction func play(_ sender: Any) {
+        logSystemTime(description: "play button was pushed")
         createPlayer()
         getReadyForTheNextSubtitle()
     }
     
     @IBAction func record(_ sender: Any) {
+        logSystemTime(description: "record button was pushed")
         audioRecorder.recordAudio()
     }
     
@@ -49,6 +58,7 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func callApi(_ sender: Any) {
+        logSystemTime(description: "api was called")
         sendRequest()
     }
     
@@ -61,8 +71,8 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
                 audioTitle: recorder.url.lastPathComponent)
             print("recorded audio url: \(recorder.url)")
             // substitute a harcoded audio file here:
-            recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
-            print("using test audio file \(recordedAudio.title)")
+//            recordedAudio = getTestAudioFile(testFile: "IronMan_420-425secs")
+//            print("using test audio file \(recordedAudio.title)")
         } else {
             print("recording was not successful")
         }
@@ -84,7 +94,6 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
                 let offset = DejavuPayload(json: string).offset!
                 self.setMovieTime(time: offset)
                 print("player is ready")
-
             }
         }
         self.recordApiCallTime()
@@ -124,5 +133,9 @@ class PlayerViewController: UIViewController, AVAudioRecorderDelegate {
     func getTestAudioFile(testFile: String) -> RecordedAudio {
         let nsurl = Bundle.main.url(forResource: testFile, withExtension: "wav")! as NSURL
         return RecordedAudio(audioFilePathURL: nsurl, audioTitle: testFile)
+    }
+    
+    func logSystemTime(description: String) {
+        print("\(description): \(Date.timeIntervalSinceReferenceDate - 537933931)")
     }
 }

@@ -8,7 +8,7 @@
 		<true/>
 	</dict>
 	<key>APIEndPoint</key>
-	<string>http://127.0.0.1:5000/recognize</string>
+	<string>http://10.243.20.116:5000/recognize</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>I would like to use the mic</string>
 	<key>LSApplicationCategoryType</key>
